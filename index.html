@@ -1,0 +1,86 @@
+<!--Author: Kerry O'Neill
+Email address: kerry_oneill@student.uml.edu
+Class: 91.61 GUI Programming I
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+  <script src="js/script.js"></script>
+
+  <title> HW 6 </title>
+
+  <!--header code, i used a jumbotron and used a gradient background-->
+  <div class="header">
+    <div style="background: linear-gradient(to top, #cc99ff 0%, #cc6699 100%);" class="jumbotron text-center" >
+      <h1> Dynamic Multiplication Table</h1>
+    </div>
+  </div>
+
+</head>
+
+<!--beginning of body-->
+<body>
+  <div class="container">
+
+    <!--makes grey background for jumbotron for the instructions for website-->
+    <div style="background: #DCDCDC;" class="jumbotron text-center" >
+      <h3>Enter in four numbers below for the numbers of row and columns you would like for the table.</h3>
+    </div>
+  </div>
+
+  <!--beginning of big container -->
+  <div class="container">
+    <form id="form">
+
+      <!--row 1 -->
+      <div class="row">
+        <!--size of inputbox -->
+        <div class="form-group col-md-6">
+          <input name="min_col" class="form-control" id="min_col" placeholder="Minimum Column #" type="number" min="-50" max="50">
+        </div>
+
+        <!--size of inputbox -->
+        <div class="form-group col-md-6">
+          <input name="max_col" class="form-control"id="max_col" placeholder="Maximum Column #" type="number" min="-50" max="50">
+        </div>
+      </div>
+
+      <!--row 2 -->
+      <div class="row">
+        <!--size of inputbox -->
+        <div class="form-group col-md-6">
+          <input name="min_row" class="form-control" id="min_row" placeholder="Minimum Row #" type="number" min="-50" max="50">
+        </div>
+        <!--size of inputbox -->
+        <div class="form-group col-md-6">
+          <input name="max_row" class="form-control" id="max_row" placeholder="Maximum Row #" type="number" min="-50" max="50">
+        </div>
+      </div>
+
+      <!--declares button -->
+      <div align= center>
+        <button type="submit" class="btn btn-info btn-block" name="button">Submit</button>
+      </div>
+
+      <!--had to add spacing between button and table-->
+      <br><br><br>
+
+      <div>
+        <table id="mult_table"></table>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

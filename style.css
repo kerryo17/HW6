@@ -1,0 +1,30 @@
+/*
+Author: Kerry O'Neill
+Email address: kerry_oneill@student.uml.edu
+Class: 91.61 GUI Programming I
+*/
+
+/* style code for table */
+table, th, td {
+  border: 3px solid purple;
+  text-align: center;
+  margin: auto;
+  border-spacing: 30px;
+
+}
+
+th, td{
+  width: 50px;
+  font-size: 25px;
+}
+
+.error{
+  color: red;
+}
+
+.container {
+  padding-top: 50px;
+  background-color: #2e0a1b;
+  min-width: 70%;
+  max-width: 85%;
+}
